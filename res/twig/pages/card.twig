@@ -1,42 +1,90 @@
 {% extends "base.twig" %}
 
 {% block main %}
-<div class="jumbotron jumbotron-fluid bg-success">
-  <div class="container">
-    <h1 class="display-4">Fluid jumbotron</h1>
-    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-  </div>
-</div>
-	<div class="card-group">
-		<div class="card">
-			<img src="..." class="card-img-top" alt="...">
-			<div class="card-body">
-				<h5 class="card-title">Card title</h5>
-				<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-			</div>
-			<div class="card-footer">
-				<small class="text-muted">Last updated 3 mins ago</small>
-			</div>
-		</div>
-		<div class="card">
-			<img src="..." class="card-img-top" alt="...">
-			<div class="card-body">
-				<h5 class="card-title">Card title</h5>
-				<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-			</div>
-			<div class="card-footer">
-				<small class="text-muted">Last updated 3 mins ago</small>
-			</div>
-		</div>
-		<div class="card">
-			<img src="..." class="card-img-top" alt="...">
-			<div class="card-body">
-				<h5 class="card-title">Card title</h5>
-				<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-			</div>
-			<div class="card-footer">
-				<small class="text-muted">Last updated 3 mins ago</small>
-			</div>
+	<div class="jumbotron jumbotron-fluid bg-success">
+		<div class="container">
+			<h1 class="display-4">CISC VS. RISC</h1>
+			<p class="lead">@alexis404.</p>
 		</div>
 	</div>
+	<div class="row">
+		<div class="col-2"></div>
+		<div class="col-8">
+			<p>
+				CISC, del inglés Complex instruction set computing, Computadora de Conjunto de Instrucciones Complejo. 
+																																											Los microprocesadores CISC tienen un conjunto de instrucciones que se caracteriza por ser muy amplio y que permiten realizar operaciones complejas entre operandos situados en la memoria o en los registros internos.</p>
+		</p>
+	</div>
+	<div class="col-2"></div>
+
+	<div class="row">
+		<div class="col-2"></div>
+		<div class="col-8">
+			<p>
+				RISC es el acrónimo de Reduced Instruction Set Computer lo que en castellano viene a ser conjunto reducido de instrucciones de computadora. Se entiende por procesador RISC aquel que tiene un conjunto de instrucciones con unas características determinadas.</p>
+
+		</p>
+	</div>
+	<div class="col-2"></div>
+
+
+</div>
+
+
+<table class="table table-bordered">
+
+	<thead>
+		<tr>
+			<th scope="col">CICS</th>
+			<th scope="col">RISC</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th style="font-weight: normal;">Instrucciones multiciclo</th>
+			<td>Instrucciones de único ciclo</td>
+		</tr>
+		<tr>
+			<th style="font-weight: normal;">Carga/almacenamiento incorporadas en otras instrucciones</th>
+
+			<td>Carga/almacenamiento son instrucciones separadas</td>
+		</tr>
+		<tr>
+			<th style="font-weight: normal;">Arquitectura memoria-memoria</th>
+
+			<td>Arquitectura registro-registro
+			</td>
+		</tr>
+		<tr>
+			<th style="font-weight: normal;">Instrucciones largas, Código de menos líneas</th>
+
+			<td>instrucciones cortas, Código con más líneas</td>
+		</tr>
+		<tr>
+			<th style="font-weight: normal;">Utiliza memoria de microprograma</th>
+
+			<td>Implementa las instrucciones directamente en hardware</td>
+		</tr>
+	</tbody>
+</table>
+
+<div class="row">
+	
+	<div class="col">
+		<p>
+			El motor de la mayoría de los computadores del planeta son procesadores de arquitectura CISC porque la computación personal despegó con ellos (ver recuadro Evolución de dos arquitecturas ). Los chips más usados hoy son los de la compañía californiana Intel Corporation, que son CISC.
+La firma investigadora de mercados Dataquest calcula que más de 150 millones de computadores (aproximadamente el 80 por ciento del total) tienen procesadores Intel (como los 8088, 80286, 386, 486, Pentium) o alguno de los chips copiados o basados en los de Intel (como los que fabrican las empresas AMD y Cyrix). En 1995 esa cifra rondará los 250 millones.
+También son CISC los procesadores de la otra gran familia de computadores, Macintosh, que venía empleando los chips 680x0 (como los 68020, 68030 y 68040), fabricados por la empresa Motorola.
+
+Los chips RISC, por su parte, se han estado utilizando en franjas más avanzadas y especializadas del mercado (y mucho más pequeñas).
+
+Por ejemplo, las estaciones de trabajo, que se emplean para diseño asistido por computador, animación, exploración petrolera o como servidores de red, entre otras aplicaciones, utilizan alguna de las diferentes versiones de chips RISC que se han desarrollado
+Aunque hoy hay coincidencia en que la arquitectura CISC está llegando a los límites de su potencial y en que cada vez será más difícil mejorar en términos de desempeño, Intel se ha mantenido en ella porque cambiar la arquitectura implicaría perder la compatibilidad con lo que hoy es el estándar de la industria.
+Apple se lanza al agua Apple se sacudió ese temor y se lanzó al agua, en parte porque de las dos principales ramificaciones de procesadores CISC, Intel y Motorola, la segunda parecía tener menos potencial para aumentar su desempeño.
+
+	</p>
+</div>
+
+
+
 {% endblock %}
